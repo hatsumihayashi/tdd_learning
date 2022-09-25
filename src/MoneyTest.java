@@ -3,7 +3,7 @@ package money;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class MoneyText {
+public class MoneyTest {
   @Test
   public void testMultiplication() {
     Dollar five = new Dollar(5);
