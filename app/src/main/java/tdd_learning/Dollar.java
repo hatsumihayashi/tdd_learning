@@ -1,9 +1,10 @@
 package tdd_learning;
 
 class Dollar {
-  int amount = 5 * 2;
+  int amount;
   Dollar(int amount) {
   }
   void times(int multiplier) {
+    amount = 5 * 2;
   }
 }
