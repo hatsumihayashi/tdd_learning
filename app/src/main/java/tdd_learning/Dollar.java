@@ -1,4 +1,4 @@
-package money;
+package tdd_learning;
 
 class Dollar {
   int amount;
