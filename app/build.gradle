@@ -25,6 +25,20 @@ dependencies {
     implementation 'com.google.guava:guava:31.0.1-jre'
 }
 
+test {
+  // JUnit platform を使う設定
+  useJUnitPlatform()
+
+  testLogging {
+    // テスト時の標準出力と標準エラー出力を表示する
+    showStandardStreams true
+    // イベントを出力する (TestLogEvent)
+    events 'started', 'skipped', 'passed', 'failed'
+    // 例外発生時の出力設定 (TestExceptionFormat)
+    exceptionFormat 'full'
+  }
+}
+
 application {
     // Define the main class for the application.
     mainClass = 'tdd_learning.App'
